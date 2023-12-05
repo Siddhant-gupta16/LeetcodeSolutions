@@ -12,29 +12,32 @@ public:
     
 //     return -1;
         
-        int ans =-1;
+//         int ans =-1;
         
-        for(int i=0;i<nums.size();i++){
+//         for(int i=0;i<nums.size();i++){
 
-        int index = abs(nums[i]);
+//         int index = abs(nums[i]);
        
             
-            if(nums[index]<0){
-            return index; } 
+//             if(nums[index]<0){
+//             return index; } 
             
-            else{
-                nums[index]*= -1;
-            }
+//             else{
+//                 nums[index]*= -1;
+//             }
         
+//         }
+        
+        
+        
+//         return -1;
+        
+        
+        while(nums[0]!=nums[nums[0]]){
+            swap(nums[0],nums[nums[0]]);
         }
-        
-        
-        
-        return -1;
-        
-        
-        
-        
+         
+        return nums[0];
         
         
         

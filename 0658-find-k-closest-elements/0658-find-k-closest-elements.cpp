@@ -17,12 +17,8 @@ public:
         
     }    
         
-    vector<int>ans;
-    for(int i = l;i<=h;i++){
-        ans.push_back(arr[i]);
-    }    
-        
-       return ans; 
+
+       return vector<int>(arr.begin()+l,arr.begin()+h+1); 
         
         
     }
